@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Present Value Calculator</title>
+    <link rel="stylesheet" href="static/present_value.css">
+</head>
+<body>
+    <h1>Present Value Calculator</h1>
+    <form method="post">
+        <label for="future_val">Future Value:</label>
+        <input type="number" id="future_val" name="future_val" step="any">
+        <label for="rate">Discount Rate (as a decimal):</label>
+        <input type="number" id="rate" name="rate" step="any">
+        <label for="periods">Periods:</label>
+        <input type="number" id="periods" name="periods">
+        <button type="submit">Calculate</button>
+    </form>
+    <h2>Result: {{ result }}</h2>
+    <a href="/">Home</a>
+</body>
+</html>
